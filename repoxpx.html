@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://chatroom.bmob.cn/javascripts/bmob.js"></script>
+<script src="./reboxpx.js"></script>
+<script src="./bombx.js"></script>
+<link rel="stylesheet" type="text/css" href="reboxpx.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+</script>
+</head>
+<body>
+  <div class="btn-group" id="btn-nana">
+    <button type="button" class="btn btn-info" id="btn-toggle">edit</button>
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="caret"></span>
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="javascript:btn_run();">Run</a></li>
+      <li><a href="javascript:btn_get();">Get</a></li>
+      <li><a href="javascript:btn_switch();" id="btn-switch">切换至super模式</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="javascript:btn_save();">Save</a></li>
+    </ul>
+  </div>
+<div id="back">
+<div class="btn-close"><button type="button" class="btn btn-danger" onclick="closewin('#back');">close javascript file editor</button></div>
+<div id="form-g">
+  <div class="input-group" id="form-c">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">filename</span>
+      <input type="text" class="form-control" placeholder="filename" aria-describedby="basic-addon1" id="form-filename">
+    </div>
+    <textarea class="form-control" rows="20" id="form-code"></textarea>
+  </div>
+</div>
+</div>
+<div id="backlist">
+  <div class="btn-close"><button type="button" class="btn btn-danger" onclick="closewin('#backlist');">close javascript file list</button></div>
+  <div id="tablecover">
+    <table class="table table-hover" id="filelist">
+      <tbody><tr><td>filename</td></tr></tbody>
+    </table>
+  </div>
+</div>
+<canvas id="cav">
+</canvas>
+</body>
+</html>
