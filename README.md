@@ -16,7 +16,7 @@ super model:Performing complex operations each frame.
 
 button and windows:  
 Edit:To edit the running code in every frame.  
-Save:To save your javascript file with file's name to Bmob.com.  
+Save:To save your javascript file with file's name to Bmob.cn.  
 Get:To get the files' list and try to select a javascript file to run.  
 Switch button:To switch between cube model and super model.
 
