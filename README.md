@@ -3,6 +3,8 @@ Block drawing and pixel rendering
 
 This is a project which can draw blocks according to binary string,and render pixels by complex operations in every frame.
 
+demo:[https://windring.github.io/repoxpx/repoxpx.html](https://windring.github.io/repoxpx/repoxpx.html "")
+
 vars:  
 `win.fps`:Frame rate.Default is 1 in cube model and 100 in super model.  
 `win.num`:Frame couter.  
